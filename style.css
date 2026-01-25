@@ -1,0 +1,97 @@
+:root {
+	--purple: #6b5bd2;
+	--text: #1e1e2f;
+	--muted: #5a5a75;
+	--bg: #afabc9;
+}
+
+body {
+	margin: 0;
+	font-family: Inter, system-ui, sans-serif;
+	background: var(--bg);
+	color: var(--text);
+	line-height: 1.7;
+}
+
+main {
+	max-width: 720px;
+	margin: 3rem auto 4rem;
+	padding: 0 1.25rem;
+}
+
+h1 {
+	font-size: 2.2rem;
+	margin-bottom: 0.25rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+	margin-top: 2.5rem;
+	margin-bottom: 0.75rem;
+	color: var(--purple);
+}
+
+h3 {
+	font-size: 1.05rem;
+	margin-bottom: 0.2rem;
+}
+
+p {
+	margin-top: 0.5rem;
+}
+
+a {
+	color: var(--purple);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #5939b8;
+}
+
+.muted {
+	color: var(--muted);
+}
+
+.meta {
+	font-size: 0.85rem;
+	color: var(--muted);
+}
+
+.project {
+	margin-bottom: 1.5rem;
+}
+
+/* Navbar */
+
+nav a {
+	margin-right: 1rem;
+}
+
+/* Code blocks */
+
+pre {
+	background: rgba(255, 255, 255, 0.6);
+	padding: 1rem;
+	overflow-x: auto;
+	border-left: 4px solid var(--purple);
+	font-size: 0.9rem;
+}
+
+code {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* Footer */
+
+footer {
+	margin-top: 3rem;
+	font-size: 0.9rem;
+	color: var(--muted);
+}
+
+footer a {
+	margin-right: 0.75rem;
+}
+	

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>FloofyPlasma</title>
+  <subtitle>Reverse engineering, game engines, and modding. Mostly things I find interesting.</subtitle>
+  <link href="https://floofyplasma.com/atom.xml" rel="self"/>
+  <link href="https://floofyplasma.com/"/>
+  <updated>2026-01-23T00:00:00Z</updated>
+  <id>https://floofyplasma.com/</id>
+  <author>
+    <name>FloofyPlasma</name>
+  </author>
+
+  <entry>
+    <title>Placeholder Blog Post</title>
+    <link href="https://floofyplasma.com/writing/placeholder-post.html"/>
+    <id>https://floofyplasma.com/writing/placeholder-post.html</id>
+    <updated>2026-01-23T00:00:00Z</updated>
+    <summary type="html">This is a short summary of the blog post.</summary>
+  </entry>
+
+  <entry>
+    <title>Placeholder Note</title>
+    <link href="https://floofyplasma.com/notes/placeholder-note.html"/>
+    <id>https://floofyplasma.com/notes/placeholder-note.html</id>
+    <updated>2026-01-22T00:00:00Z</updated>
+    <summary type="html">One-line description of the note.</summary>
+  </entry>
+
+</feed>
