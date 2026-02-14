@@ -21,18 +21,18 @@
 	<link rel="alternate" type="application/atom+xml" title="FloofyPlasma Atom Feed" href="/atom.xml"> -->
 
 	<!-- Meta Description -->
-	<meta name="description" content="Reverse engineering, game engines, and modding. Mostly things I find interesting.">
+	<meta name="description" content="Systems programmer building compilers, operating systems, and low-level tools. Interested in language design, OS development, and reverse engineering.">
 
 	<!-- Open Graph -->
 	<meta property="og:title" content="FloofyPlasma">
-	<meta property="og:description" content="Reverse engineering, game engines, and modding. Mostly things I find interesting.">
+	<meta property="og:description" content="Systems programmer building compilers, operating systems, and low-level tools. Interested in language design, OS development, and reverse engineering.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://floofyplasma.com">
 	
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="FloofyPlasma">
-	<meta name="twitter:description" content="Reverse engineering, game engines, and modding. Mostly things I find interesting.">
+	<meta name="twitter:description" content="Systems programmer building compilers, operating systems, and low-level tools. Interested in language design, OS development, and reverse engineering.">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
 <header>
 <h1>FloofyPlasma</h1>
 <p class="muted">
-	Reverse engineering, game engines, and modding. Mostly things I find interesting.
+	Systems programmer building compilers, operating systems, and low-level tools. Interested in language design, OS development, and reverse engineering.
 </p>
 <!--
 <nav>
@@ -54,10 +54,57 @@
 
 <h2>About me</h2>
 <p>
-	Hey, I'm FloofyPlasma. I like taking games apart with IDA Pro to see what makes them tick, then building things based on what I learn. I mostly work on mobile games (The Blockheads is a big one), and I'm pretty into C++, game engines, graphics stuff, networking systems. This site is where I ramble about whatever I'm reverse engineering or building at the moment.
+	Hey, I'm FloofyPlasma. I build compilers, operating systems, and game engines. I work primarily in C++ on low-level systems: language implementations, LLVM backends, OS kernels and graphics pipelines. I also reverse engineer software to understand how things work under the hood.
 </p>
 
 <h2>Projects</h2>
+
+<article class="project">
+    <h3>Raccoon Programming Language</h3>
+    <div class="meta">compiler · llvm · language design</div>
+    <p>
+        A statically-typed programming language compiled via LLVM. Currently supports control flow (if/else), loops (for/while), and boolean operations. Written in C++ with full test coverage.
+    </p>
+    <p>
+        <a href="https://github.com/floofyplasma/raccoon">GitHub</a>
+    </p>
+</article>
+
+<article class="project">
+    <h3>LLVM Backend for the fox32 CPU Architecture</h3>
+    <div class="meta">compilers · llvm · code generation</div>
+    <p>
+        Custom LLVM backend targeting the fox32 CPU architecture. Implements instruction selection, register allocation, and assembly generation. Binary emission is in progress.
+    </p>
+    <p>
+        <a href="https://github.com/floofyplasma/llvm-project-fox32">GitHub</a> <br>
+        <a href="https://github.com/fox32-arch/">fox32</a>
+    </p>
+</article>
+
+<article class="project">
+    <h3>PlasmaOS Operating System</h3>
+    <div class="meta">osdev · systems programming · c</div>
+    <p>
+        Bootable operating system with physical and virtual memory management, ext2 filesystem driver, and userspace program support. Runs in QEMU.
+    </p>
+    <p>
+        <a href="https://github.com/floofyplasma/PlasmaOS">GitHub</a>
+    </p>
+</article>
+
+<article class="project">
+    <h3>Reblocked</h3>
+    <div class="meta">game development · custom engine · c++</div>
+    <p>
+        Reimplementation of the classic 3D puzzle game Blockout, built from scratch with a custom game engine. Features a state machine architecture for game flow management and modular rendering/input systems.
+    </p>
+    <p>
+        <a href="https://github.com/floofyplasma/Reblocked">GitHub</a>
+    </p>
+</article>
+
+<h2>Community Projects</h2>
 
 <article class="project">
 	<h3>The Blockheads Wiki</h3>
@@ -69,17 +116,6 @@
 	<a href="https://theblockheads.wiki">theblockheads.wiki</a> <br>
 		<a href="https://theblockheads.wiki/Blockmarket">Blockmarket</a> <br>
 		<a href="https://theblockheads.wiki/BlockmarketTicker">Blockmarket Ticker</a>
-	</p>
-</article>
-
-<article class="project">
-	<h3>aabric</h3>
-	<div class="meta">minecraft modding · tooling</div>
-	<p>
-		Backport of the Fabric mod loader to Minecraft Alpha 1.1.2_01. Not much to say about this except for I got bored and threw this together in a week.
-	</p>
-	<p>
-		<a href="https://github.com/FloofyPlasma/aabric-example-mod">GitHub</a>
 	</p>
 </article>
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>FloofyPlasma</title>
-  <subtitle>Reverse engineering, game engines, and modding. Mostly things I find interesting.</subtitle>
+  <subtitle>Systems programmer building compilers, operating systems, and low-level tools. Interested in language design, OS development, and reverse engineering.</subtitle>
   <link href="https://floofyplasma.com/atom.xml" rel="self"/>
   <link href="https://floofyplasma.com/"/>
   <updated>2026-01-23T00:00:00Z</updated>
