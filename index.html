@@ -1,162 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>floofyplasma.com</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>floofyplasma.com</title>
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lucida+Grande:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- Styles -->
-	<link rel="stylesheet" href="/style.css">
-	
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="/favicon.png">
-	
-	<!-- RSS/Atom Feeds -->
-	<!-- <link rel="alternate" type="application/rss+xml" title="FloofyPlasma RSS Feed" href="/rss.xml">
-	<link rel="alternate" type="application/atom+xml" title="FloofyPlasma Atom Feed" href="/atom.xml"> -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style.css" />
 
-	<!-- Meta Description -->
-	<meta name="description" content="Systems programmer building compilers, operating systems, and low-level tools. Interested in language design, OS development, and reverse engineering.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
-	<!-- Open Graph -->
-	<meta property="og:title" content="FloofyPlasma">
-	<meta property="og:description" content="Systems programmer building compilers, operating systems, and low-level tools. Interested in language design, OS development, and reverse engineering.">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://floofyplasma.com">
-	
-	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="FloofyPlasma">
-	<meta name="twitter:description" content="Systems programmer building compilers, operating systems, and low-level tools. Interested in language design, OS development, and reverse engineering.">
-</head>
+    <!-- RSS/Atom Feeds -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="FloofyPlasma's RSS Feed"
+      href="/rss.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="FloofyPlasma's Atom Feed"
+      href="/atom.xml"
+    />
 
-<body>
-<main>
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Systems programmer · game engine developer · reverse engineer"
+    />
 
-<header>
-<h1>FloofyPlasma</h1>
-<p class="muted">
-	Systems programmer building compilers, operating systems, and low-level tools. Interested in language design, OS development, and reverse engineering.
-</p>
-<!--
-<nav>
-	<a href="/">Home</a>
-	<a href="/writing/">Writing</a>
-	<a href="/notes/">Notes</a>
-</nav>
--->
-</header>
+    <!-- Open Graph -->
+    <meta property="og:title" content="FloofyPlasma" />
+    <meta
+      property="og:description"
+      content="Systems programmer · game engine developer · reverse engineer"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://floofyplasma.com" />
 
-<h2>About me</h2>
-<p>
-	Hey, I'm FloofyPlasma. I build compilers, operating systems, and game engines. I work primarily in C++ on low-level systems: language implementations, LLVM backends, OS kernels and graphics pipelines. I also reverse engineer software to understand how things work under the hood.
-</p>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FloofyPlasma" />
+    <meta
+      name="twitter:description"
+      content="Systems programmer · game engine developer · reverse engineer"
+    />
+  </head>
 
-<h2>Projects</h2>
+  <body>
+    <main>
+      <header>
+        <h1>FloofyPlasma</h1>
+        <p class="muted">
+          Systems programmer · game engine developer · reverse engineer
+        </p>
 
-<article class="project">
-    <h3>Raccoon Programming Language</h3>
-    <div class="meta">compiler · llvm · language design</div>
-    <p>
-        A statically-typed programming language compiled via LLVM. Currently supports control flow (if/else), loops (for/while), and boolean operations. Written in C++ with full test coverage.
-    </p>
-    <p>
-        <a href="https://github.com/floofyplasma/raccoon">GitHub</a>
-    </p>
-</article>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/blog/">Blog</a>
+          <!-- <a href="/projects/">Projects</a> -->
+        </nav>
+      </header>
 
-<article class="project">
-    <h3>LLVM Backend for the fox32 CPU Architecture</h3>
-    <div class="meta">compilers · llvm · code generation</div>
-    <p>
-        Custom LLVM backend targeting the fox32 CPU architecture. Implements instruction selection, register allocation, and assembly generation. Binary emission is in progress.
-    </p>
-    <p>
-        <a href="https://github.com/floofyplasma/llvm-project-fox32">GitHub</a> <br>
-        <a href="https://github.com/fox32-arch/">fox32</a>
-    </p>
-</article>
+      <h2>Recent Blog Posts</h2>
 
-<article class="project">
-    <h3>PlasmaOS Operating System</h3>
-    <div class="meta">osdev · systems programming · c</div>
-    <p>
-        Bootable operating system with physical and virtual memory management, ext2 filesystem driver, and userspace program support. Runs in QEMU.
-    </p>
-    <p>
-        <a href="https://github.com/floofyplasma/PlasmaOS">GitHub</a>
-    </p>
-</article>
+      <article class="project">
+        <h3>
+          <a href="/blog/new-site.html">site redesign</a>
+        </h3>
+        <div class="meta">July 31, 2026 at 00:32</div>
+        <p>
+          i redesigned my site after Mac OS X because I honestly think modern
+          design sucks
+        </p>
+      </article>
 
-<article class="project">
-    <h3>Reblocked</h3>
-    <div class="meta">game development · custom engine · c++</div>
-    <p>
-        Reimplementation of the classic 3D puzzle game Blockout, built from scratch with a custom game engine. Features a state machine architecture for game flow management and modular rendering/input systems.
-    </p>
-    <p>
-        <a href="https://github.com/floofyplasma/Reblocked">GitHub</a>
-    </p>
-</article>
+      <h2>Projects</h2>
 
-<h2>Community Projects</h2>
+      <article class="project">
+        <h3>LLVM Backend for the fox32 CPU Architecture</h3>
+        <div class="meta">compilers · llvm · code generation</div>
+        <p>
+          Custom LLVM backend targeting the fox32 CPU architecture. Implements
+          instruction selection, register allocation, and assembly generation.
+          Binary emission is in progress.
+        </p>
+        <p>
+          <a
+            class="btn"
+            href="https://github.com/floofyplasma/llvm-project-fox32"
+            >GitHub</a
+          >
+          <a class="btn" href="https://github.com/fox32-arch/">fox32</a>
+        </p>
+      </article>
 
-<article class="project">
-	<h3>The Blockheads Wiki</h3>
-	<div class="meta">community infrastructure</div>
-	<p>
-	    I run and maintain the primary community wiki for The Blockheads, including custom rewrites of the Blockmarket and historical price tracking.
-	</p>
-	<p>
-	<a href="https://theblockheads.wiki">theblockheads.wiki</a> <br>
-		<a href="https://theblockheads.wiki/Blockmarket">Blockmarket</a> <br>
-		<a href="https://theblockheads.wiki/BlockmarketTicker">Blockmarket Ticker</a>
-	</p>
-</article>
+      <article class="project">
+        <h3>Reblocked</h3>
+        <div class="meta">game development · custom engine · c++</div>
+        <p>
+          Reimplementation of the classic 3D puzzle game Blockout, built from
+          scratch with a custom game engine. Features a state machine
+          architecture for game flow management and modular rendering/input
+          systems.
+        </p>
+        <p>
+          <a class="btn" href="https://github.com/floofyplasma/Reblocked"
+            >GitHub</a
+          >
+        </p>
+      </article>
 
-<!-- <h2>Recent Writing</h2>
+      <h2>Community Projects</h2>
 
-<article class="project">
-	<h3>
-		<a href="/writing/placeholder-post.html">Placeholder blog post</a>
-	</h3>
-	<div class="meta">January 23, 2026</div>
-	<p>
-		Placeholder post summary.
-	</p>
-</article>
+      <article class="project">
+        <h3>The Blockheads Wiki</h3>
+        <div class="meta">community infrastructure</div>
+        <p>
+          I run and maintain the primary community wiki for The Blockheads,
+          including custom rewrites of the Blockmarket and historical price
+          tracking.
+        </p>
+        <p>
+          <a class="btn" href="https://theblockheads.wiki"
+            >theblockheads.wiki</a
+          >
+          <a class="btn" href="https://theblockheads.wiki/Blockmarket"
+            >Blockmarket</a
+          >
+          <a class="btn" href="https://theblockheads.wiki/BlockmarketTicker"
+            >Blockmarket Ticker</a
+          >
+        </p>
+      </article>
 
-<p><a href="/writing/">View all writing</a></p>
+      <footer>
+        <div class="buttons-grid">
+          <a
+            href="https://ry.cd-rom.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/images/ry_88x31.png"
+              alt="ry.cd-rom.net"
+              width="88"
+              height="31"
+            />
+          </a>
+        </div>
 
-<h2>Recent Notes</h2>
-
-<article class="project">
-	<h3>
-		<a href = "/notes/placeholder-note.html">Placeholder note</a>
-	</h3>
-	<div class="meta">January 23, 2026</div>
-	<p>
-		Placeholder note summary.
-	</p>
-</article>
-
-<p><a href="/notes/">View all notes</a></p> -->
-
-<footer>
-	<p>
-		<a href="https://github.com/FloofyPlasma" target="_blank" rel="noopener noreferrer">GitHub</a>
-		<a href="https://bsky.app/profile/floofyplasma.com" target="_blank" rel="noopener noreferrer">Bluesky</a>
-		<a href="https://youtube.com/@FloofyPlasma" target="_blank" rel="noopener noreferrer">YouTube</a>
-		<!-- <a href="/rss.xml">RSS</a>
-		<a href="/atom.xml">Atom</a> -->
-	</p>
-</footer>
-
-</main>
-</body>
+        <p>
+          <a
+            href="https://github.com/FloofyPlasma"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://bsky.app/profile/floofyplasma.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Bluesky</a
+          >
+          <a
+            href="https://youtube.com/@FloofyPlasma"
+            target="_blank"
+            rel="noopener noreferrer"
+            >YouTube</a
+          >
+          <a href="/rss.xml">RSS</a>
+          <a href="/atom.xml">Atom</a>
+        </p>
+      </footer>
+    </main>
+  </body>
 </html>
