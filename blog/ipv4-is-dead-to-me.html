@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>why ipv6 is the future and ipv4 needs to die - FloofyPlasma</title>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lucida+Grande:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="ipv4 is exhausted. ipv6 is the answer. why nobody's adopting it is baffling."
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="why ipv6 is the future and ipv4 needs to die"
+    />
+    <meta
+      property="og:description"
+      content="ipv4 is exhausted. ipv6 is the answer. why nobody's adopting it is baffling."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://floofyplasma.com/blog/post-title.html"
+    />
+    <meta property="article:published_time" content="2026-08-01T10:37:08+00:00" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="why ipv6 is the future and ipv4 needs to die"
+    />
+    <meta
+      name="twitter:description"
+      content="ipv4 is exhausted. ipv6 is the answer. why nobody's adopting it is baffling."
+    />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>why ipv6 is the future and ipv4 needs to die</h1>
+        <p class="muted">August 1, 2026 at 06:37</p>
+
+        <nav>
+          <a href="/">Home</a>
+          <a href="/blog/">Blog</a>
+          <!-- <a href="/projects/">Projects</a> -->
+        </nav>
+      </header>
+
+      <p>
+        For a while now I've been stuck in the hellhole known as IPv4 port
+        forwarding. Yeah, its easy to do, and you can do it in seconds, but its
+        just so annoying. I like to host MC servers for me and my friends to
+        play on. Having to forward a different port for each one (because I
+        occasionally have them on simultanously) is annoying. I'm migrating them
+        to IPv6 only, and its just so much better.
+      </p>
+
+      <h2>The Problem:</h2>
+
+      <p>
+        Port forwarding is so fucking annoying. I mean it only exists because
+        you can't give every device on (in this case) a home network a public
+        IPv4 address. The router has to know which device wants to listen to
+        traffic on which port, god forbid you have NAT then you have another
+        level of translation shit. I guess it adds another layer of security,
+        but like, thats what firewalls are for. Let your firewall do its job.
+      </p>
+
+      <p>
+        On the topic of ports, all my sites are proxied through Cloudflare. This
+        is mainly because its fucking annoying having to open a unique port for
+        each site. Its easier to just install their cloudflared tool and just
+        let it map for me. I would much rather not have to worry about that
+        stuff, and I'm going to slowly migrate my stuff <i>away</i> from that
+        daemon (not off Clloudflare though, I still use them for DNS).
+        Cloudflare is cool n all, and they have blocked a couple denial of
+        service attacks in the pass, thank you for that. I just don't want to
+        have to completely proxy my sites through them, when I can use them for
+        just DNS instead.
+      </p>
+
+      <h2>The Solution:</h2>
+
+      <p>
+        I was able to obtain a /60 IPv6 block from my ISP today, and god its
+        such a fucking blessing. My servers have their own VLAN because its just
+        basic security, and I was able to give them the joy of their own IPv6
+        subnet. I can just pick my own IPv6 address in that subnet, have my MC
+        server machine take an IP in its own /64 block, and bind the server to
+        it. I don't have to port forward shit and connections don't have to go
+        through NAT traversial either.
+      </p>
+
+      <h2>Fun Stuff:</h2>
+
+      <p>
+        One thing very cool about IPv6 is that you can just decide "yeah I want
+        to have f00d in my ip" and its just like, "ok sure go ahead". It's not a
+        super important thing to have, but its honestly cool. I'm working on
+        giving my MC servers words in their IPs to help me differentiate at a
+        glance without having to SSH into the machine to see what server is on
+        what port.
+      </p>
+
+      <h2>Why IPv6 is Better:</h2>
+
+      <p>
+        IPv4 has been (at the time of writing) exhausted for a decade. IPv6 is
+        the future. As I said before, many times, NAT traversial isn't a problem
+        with IPv6 because IPv6 doesn't <i>have</i> NAT at all. Everything just
+        works, and you can still give a device a unique public IP by just
+        assigning it a new one on the router. One more perk, you don't even have
+        to remember a things private IP, with direct delivery, it just routes
+        locally regardless if you are connecting to a device on your network by
+        its public IP.
+      </p>
+
+      <p>
+        NAT (and by extension CGNAT) is a bandaid fix to a problem IPv6 solved
+        decades ago. Just fucking use IPv6!!! It's better than IPv4 in literally
+        every way, and has no downsides. Everything just <b>WORKS</b>, no port
+        forwarding shit either! You can host multiple things on the same port on
+        your network and it just fucking works.
+      </p>
+
+      <h2>Addressing the "addresses are too long" complaint:</h2>
+
+      <p>
+        That argument is just so fucking stupid and wrong. You don't
+        <i>have</i> to make the IPs long. If you have a block (which every sane
+        ISP gives you), you can go as detailed or short as you want. You have
+        quintillions of addresses to pick from. And also, IPv6 has this nifty
+        thing where you can end an IP with <code>::feed:face</code> and it fills
+        all the remaining bits with zeros, behind the scenes, automatically. You
+        don't <i>have</i> to add a bunch of random bits because there is so much
+        room for them to just be zeros.
+      </p>
+
+      <h2>The Constraint (and why it's still better):</h2>
+
+      <p>
+        I can't remove <code>2600:1700:6260</code> from it because that's the
+        required prefix from my ISP, but I can still give <i>anything</i> its
+        own IP with that prefix. It works fine, no conflict of ports (like I
+        have with my sites, god thats so fucking annoying). If I want to, I can
+        just tweak on my router (or my host, depending on if the device in
+        question uses DHCP) the IP and boom, its a new device to the global
+        internet.
+      </p>
+
+      <h2>DNS makes it seamless:</h2>
+
+      <p>
+        99% of the time that other IP is already associated with a DNS record
+        anyway (for example
+        <a
+          href="https://ipv6.google.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          >ipv6.google.com</a
+        >). You aren't memorizing those addresses, you just use the DNS names
+        like you do with IPv4. In this situation DNS isn't the root of all hate
+        and evil, IPv4 is. Want to have an easy to remember name for something?
+        Just make a fucking DNS record like you do for IPv4. You can have BOTH
+        IPv4 and IPv6 addresses on one record too (A & AAAA). There is literally
+        no downside to adding IPv6 support to your records.
+      </p>
+
+      <h2>The Bigger Picture:</h2>
+
+      <p>
+        IPv4 only supports 4.3 billion addresses, and that is not nearly enough
+        for all the fucking shit we connect to the internet. We have like 21
+        billion devices on the internet. Even just a /64 allocation gives you 18
+        quintillion addresses, far more than we as a society would ever consume.
+        IPv4 is ancient, and IPv6 was drafted 14 years later. They could see
+        that IPv4 could be exausted so they improved it, and solved the problem
+        decades before it was even a thing.
+      </p>
+
+      <p>
+        I don't understand why it took so damn long for IPv6 to be implemented.
+        If I could change history, I would've made it so IPv4 was immediately
+        deprecated and replaced with IPv6. Its just the superior system, I
+        literally cannot think of any real (not bullshit like "oooh its too
+        long") excuses for not at the very least supporting it.
+      </p>
+
+      <h2>Why I think adoption sucks:</h2>
+
+      <p>
+        First off, if your ISP doesn't give you at least a /64 block of IPv6
+        space, your ISP is stupid and dumb. That's it. They have literally no
+        reason to not give you IPv6 except for the fact that they don't directly
+        get monetary benefit for doing it. Yes, its costly to implement, but god
+        if everyone fucking did it already they would realize they have no
+        finanical reason to renew their IPv4 lease.
+      </p>
+
+      <p>
+        Far too much shit relies on IPv4. If everyone adopted IPv6 faster, we
+        can make IPv4 obsolete. I mean, a huge chunk of cellular networks use
+        IPv6, and there are even some that are IPv6 ONLY. They are forced to use
+        shitty translation mechanisms like NAT64 (welcome back the disease known
+        as NAT) so you can connect to that shitty website that still doesn't
+        support IPv6.
+      </p>
+
+      <h2>Current State:</h2>
+
+      <p>
+        I see no reason for my MC servers to be on IPv4 anymore. I will be
+        migrating them all to <b>ONLY</b> use IPv6. I plan on migrating my
+        websites to IPv6 as well, but this will be slower (I have quite a few to
+        migrate). I cannot promise that my websites will continue to support
+        IPv4 at this time, but with how fucking far behind 50% of the internet
+        is, I guess I have to.
+      </p>
+
+      <p>
+        To all you indie game devs out there: please, I beg you, please support
+        IPv6. Make it the default network stack in your game, let IPv4 be the
+        fallback. It makes P2P stuff so much easier because you don't have to
+        jump through dozens of hoops trying to punch through NAT.
+      </p>
+
+      <footer>
+        <p>
+          <a href="/">Home</a>
+          <a href="/blog/">Back to blog</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

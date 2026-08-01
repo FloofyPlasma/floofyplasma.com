@@ -5,7 +5,7 @@
     <subtitle>Posts and notes.</subtitle>
     <link href="https://floofyplasma.com/atom.xml" rel="self" />
     <link href="https://floofyplasma.com/" />
-    <updated>2026-07-31T04:32:47+00:00</updated>
+    <updated>2026-08-01T10:37:08+00:00</updated>
     <id>https://floofyplasma.com/</id>
     <author>
         <name>FloofyPlasma</name>
@@ -18,5 +18,14 @@
         <updated>2026-07-31T04:32:47+00:00</updated>
         <summary>i redesigned my site after Mac OS X because I honestly think modern design sucks</summary>
     </entry>
+
+    <entry>
+        <title>why ipv6 is the future and ipv4 needs to die</title>
+        <link href="https://floofyplasma.com/blog/ipv4-is-dead-to-me.html" />
+        <id>https://floofyplasma.com/blog/ipv4-is-dead-to-me.html</id>
+        <updated>2026-08-01T10:37:08+00:00</updated>
+        <summary>ipv4 is exhausted. ipv6 is the answer. why nobody's adopting it is baffling.</summary>
+    </entry>
+
 
 </feed>
